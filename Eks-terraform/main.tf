@@ -107,7 +107,7 @@ resource "aws_eks_node_group" "eks_node_group" {
     max_size     = 2
     min_size     = 1
   }
-  instance_types = ["t2.medium"]
+  instance_types = ["t3.xlarge"]
 
   depends_on = [
     aws_iam_role_policy_attachment.eks_worker_node_policy,

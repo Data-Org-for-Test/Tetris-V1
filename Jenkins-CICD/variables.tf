@@ -1,23 +1,23 @@
 variable "aws_region" {
   description = "The AWS region to create things in."
-  default     = "ap-south-1"
+  default     = "eu-north-1"
 }
 variable "key_name" {
   description = " SSH keys to connect to ec2 instance"
-  default     = "neflix-demo"
+  default     = "test-key"
 }
 variable "instance_type" {
   description = "instance type for ec2"
-  default     = "t3.medium"
+  default     = "t3.xlarge"
 }
 variable "ami_id" {
   description = "AMI for Ubuntu Ec2 instance"
-  default     = "ami-03f4878755434977f"
+  default     = "ami-0014ce3e52359afbd"
 }
 variable "bucket_name" {
   description = "The name of the S3 bucket to create"
   type        = string
-  default     = "rajinikanths3"
+  default     = "project-bucket-v1"
 }
 
 #variable "dynamodb_table" {
